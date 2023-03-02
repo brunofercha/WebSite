@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> WIKI part 2 - BRUNO </h1>
+<br>
+<hr>
+<br>
+
+<h2> Listas </h2>
+
+<h4> Listas Não Ordenadas </h4>
+<ul>  
+    <li> Escolha1 </li>
+        <ul> 
+            <li> Coisas boas </li>
+            <li> Não Reclame </li>
+        </ul>
+    <li> Escolha 2</li>
+    <ul> 
+        <li> Boas </li>
+        <li> Coisas </li>
+    </ul>
+    <li> Escolha 3</li>
+    <ul> 
+        <li> Alegria </li>
+        <li> Positividade </li>
+    </ul>
+    <li> Escolha 4</li>
+    <ul> 
+        <li> Seja </li>
+        <li> Grato </li>
+    </ul>
+</ul>
+
+<h4> Listas Ordenadas </h4>
+<ol type="I" > <!-- Tem vários tipo de TYPE --> 
+    <li> Medo </li>
+        <ol type="i"> 
+            <li> Se vire </li>
+            <li> Se vire </li>
+            <li> Se vire </li>
+        </ol>
+    <li> Dor </li>
+    <ol type="i"> 
+        <li> Se vire </li>
+        <li> Se vire </li>
+        <li> Se vire </li>
+    </ol>
+    <li>Choro</li>
+    <ol type="i"> 
+        <li> Se vire </li>
+        <li> Se vire </li>
+        <li> Se vire </li>
+    </ol>
+    <li>Caos</li>
+    <ol type="i"> 
+        <li> Se vire </li>
+        <li> Se vire </li>
+        <ol type="a"> 
+            <li> Se vire </li>
+            <li> Se vire </li>
+            <li> Se vire </li>
+        </ol>
+        <li> Se vire </li>
+    </ol>
+
+</ol> 
+
+
+<h1> Listas de Descrição Testes </h1>
+<dl>
+   
+    <h2><dt> Anomino </dt></h2>
+    <dd> 
+        <h3><ul> 1 Anomino  </ul></h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni ut neque officiis, eligendi dignissimos, pariatur qui eaque modi nobis illum eos architecto dolorem praesentium nulla distinctio esse beatae suscipit.
+    </dd>
+
+    <dd> 
+        <h3><ul> 2 Anomino  </ul></h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni ut neque officiis, eligendi dignissimos, pariatur qui eaque modi nobis illum eos architecto dolorem praesentium nulla distinctio esse beatae suscipit.
+    </dd>
+
+    <dd> 
+        <h3><ul> 3 Anomino  </ul></h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni ut neque officiis, eligendi dignissimos, pariatur qui eaque modi nobis illum eos architecto dolorem praesentium nulla distinctio esse beatae suscipit.
+    </dd>
+
+
+</dl>
+
+<a href="index.html"> Voltar </a>
+
+<h3>Tabelas em Html</h3>
+
+<table bgcolor="black" width="700"> 
+    <tr bgcolor="grey"> 
+        <th width="100" >Domingo</th>
+        <th width="100" >Segunda</th>
+        <th width="100" >Terça</th>
+        <th width="100" >Quarta</th>
+        <th width="100" >Quinta</th>
+        <th width="100" >Sexta</th>
+        <th width="100" >Sabado</th>
+    </tr>
+    <tr bgcolor="ligthgrey" align="center"> 
+        <td>Fechado</td>
+        <td>Aberto</td>
+        <td>Aberto</td>
+        <td>Aberto</td>
+        <td>Aberto</td>
+        <td>Aberto</td>
+        <td>Fechado</td>
+    </tr>
+</table>
+<br>
+<hr>
+
+<a href="https://www.google.com" title="vai para o google" target="_blank">
+    <button style="background-color:#000000;color:green;border-radius: 5px;" >Clique em mim :)</button>
+</a>
+<br>
+<hr>
+<br>
+
+<button onclick="emMim()" style="background-color: #000000;color: blueviolet;border-radius: 5px;" title="Botão de Mudança" > Você tem Coragem de Clicar? </button>
+
+<p id="certo" > Você é... </p>
+
+<script> 
+    function emMim(){
+        document.getElementById("certo").innerHTML = "Linda(o)!";
+    }
+</script>
+<br>
+<hr>
+<br>
+<br>
+
+<h1> Formulário de Cria. </h1>
+
+<form > 
+
+    <div>
+    <label for="pnome">Primeiro nome: </label> 
+    <input type="text" id="pnome" name="pnome" placeholder="Brunin" required> 
+    </div>
+
+    <br>
+
+    <div>
+    <label for="snome">Segundo nome: </label> 
+    <input type="text" id="snome" name="snome" placeholder="Da Leste" required> 
+    </div>
+
+    <br>
+
+    <div>
+        <label for="senha">Senha: </label> 
+        <input type="password" id="senha" name="senha" maxlength="13" required> 
+        </div>
+
+    <br>
+
+    <div>
+        <label for="email">Email: </label> 
+        <input type="email" id="email" name="email"  placeholder="bagodoce171@ovo.com" required> 
+        </div>
+
+    <br>
+
+    <div>
+        <input type="reset">
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form>
+
+
+</body>
+</html>
